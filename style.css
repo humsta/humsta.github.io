@@ -36,14 +36,13 @@ body {
 }
 
 .menu {
-    float: left;
-    margin-left: 340px;
+    display: inline-block;
 
 }
 
 .menu-list {
     list-style-type: none;
-    float: left;
+    display: inline-block;
 }
 
 .menu-link {
@@ -103,10 +102,10 @@ body {
 }
 
 .inpt-search-form {
-    margin-top: -9px;
-    margin-right: -103px;
     outline: 1px solid #d9dee1;
-    float: left;
+    min-width: 88px;
+    background-color: #fff;
+    display: inline-block;
 }
 
 .inpt-search {
@@ -122,10 +121,12 @@ body {
     border: none;
     background-color: #ffffff;
     max-width: 125px;
-    height: 39px;
+    height: 40px;
     margin-right: -5px;
     padding-left: 10px;
-    float: left;
+    display: inline-block;
+        list-style-type: none;
+    min-width: 50px;
 }
 
 
@@ -148,7 +149,7 @@ body {
     height: 40px;
     width: 38px;
     background-color: #fff;
-
+    display: inline;
 }
 
 .menu-search:hover .inpt-search {
@@ -805,7 +806,19 @@ fea-imgs-list {
     opacity: 1;
     filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
     border: none;
-    float: left;
+    margin-right: 26.6%;
+}
+
+@media screen and (max-width: 1518px) {
+    .img-href {
+        margin-right: 0%;
+    }
+}
+
+@media screen and (min-width: 4300px) {
+    .img-href {
+        margin-right: 0%;
+    }
 }
 
 .img-href:hover {
